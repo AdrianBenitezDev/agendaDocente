@@ -1,0 +1,519 @@
+[debug] [2026-03-19T01:49:48.384Z] ----------------------------------------------------------------------
+[debug] [2026-03-19T01:49:48.402Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\37adr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2026-03-19T01:49:48.403Z] CLI Version:   15.8.0
+[debug] [2026-03-19T01:49:48.403Z] Platform:      win32
+[debug] [2026-03-19T01:49:48.404Z] Node Version:  v20.19.6
+[debug] [2026-03-19T01:49:48.404Z] Time:          Wed Mar 18 2026 22:49:48 GMT-0300 (hora estándar de Argentina)
+[debug] [2026-03-19T01:49:48.405Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-19T01:49:48.410Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-03-19T01:49:48.606Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-19T01:49:48.608Z] > authorizing via signed-in user (artbenitezdev@gmail.com)
+[debug] [2026-03-19T01:49:48.626Z] Checked if tokens are valid: false, expires at: 1773838977202
+[debug] [2026-03-19T01:49:48.627Z] Checked if tokens are valid: false, expires at: 1773838977202
+[debug] [2026-03-19T01:49:48.630Z] > refreshing access token with scopes: []
+[debug] [2026-03-19T01:49:48.645Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-19T01:49:48.646Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-19T01:49:49.957Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-19T01:49:49.958Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-19T01:49:49.976Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-03-19T01:49:50.601Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-03-19T01:49:50.602Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-03-19T01:49:51.423Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-03-19T01:50:47.611Z] ----------------------------------------------------------------------
+[debug] [2026-03-19T01:50:47.615Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\37adr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project agendadocente-5828d
+[debug] [2026-03-19T01:50:47.616Z] CLI Version:   15.8.0
+[debug] [2026-03-19T01:50:47.616Z] Platform:      win32
+[debug] [2026-03-19T01:50:47.616Z] Node Version:  v20.19.6
+[debug] [2026-03-19T01:50:47.617Z] Time:          Wed Mar 18 2026 22:50:47 GMT-0300 (hora estándar de Argentina)
+[debug] [2026-03-19T01:50:47.617Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-19T01:50:53.745Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-19T01:50:53.747Z] > authorizing via signed-in user (artbenitezdev@gmail.com)
+[debug] [2026-03-19T01:50:53.749Z] [iam] checking project agendadocente-5828d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-19T01:50:53.754Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:50:53.754Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:50:53.757Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions [none]
+[debug] [2026-03-19T01:50:53.757Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions  x-goog-user-project=agendadocente-5828d
+[debug] [2026-03-19T01:50:53.758Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-19T01:50:57.646Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions 200
+[debug] [2026-03-19T01:50:57.647Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-19T01:50:57.649Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:50:57.651Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:50:57.652Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d [none]
+[debug] [2026-03-19T01:51:00.754Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d 200
+[debug] [2026-03-19T01:51:00.755Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d {"projectId":"agendadocente-5828d","projectNumber":"94681426839","displayName":"agendaDocente","name":"projects/agendadocente-5828d","resources":{"hostingSite":"agendadocente-5828d"},"state":"ACTIVE","etag":"1_5560e0fd-3bea-4d0f-8a96-07c855356532"}
+[info] 
+[info] === Deploying to 'agendadocente-5828d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-19T01:51:00.784Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:00.785Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:00.786Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions [none]
+[debug] [2026-03-19T01:51:00.786Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-03-19T01:51:05.659Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions 200
+[debug] [2026-03-19T01:51:05.660Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions {"name":"projects/94681426839/sites/agendadocente-5828d/versions/e708f9463eeb9bcd","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[agendadocente-5828d]: beginning deploy... 
+[info] i  hosting[agendadocente-5828d]: found 38 files in . 
+[debug] [2026-03-19T01:51:05.762Z] [hosting] uploading with 200 concurrency
+[debug] [2026-03-19T01:51:05.766Z] [hosting] hash cache [] not populated
+[debug] [2026-03-19T01:51:05.818Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:05.818Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:05.823Z] [hosting] hash cache [] stored for 38 files
+[debug] [2026-03-19T01:51:05.823Z] [hosting][hash queue][FINAL] {"max":43,"min":30,"avg":34.21052631578949,"active":0,"complete":38,"success":38,"errored":0,"retried":0,"total":38,"elapsed":57}
+[debug] [2026-03-19T01:51:05.824Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/e708f9463eeb9bcd:populateFiles [none]
+[debug] [2026-03-19T01:51:05.825Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/e708f9463eeb9bcd:populateFiles {"files":{"/agenda.html":"4b41b7c58cc089de40ac7916ae1d1e4c676f34d54cf85b9096ae171100eed728","/js/index.js":"e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4","/styles.css":"1e6a6949229dc96804c75d47e0f6326cc9d30563105489de7258b41449b67b9e","/js/db.js":"d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838","/.git/index":"6072a858b665aff695b9888dead27b1918ad9b6ade47bd43a0e446650076cf6d","/js/agenda.js":"adf66afb69d89483bfbe34808bb1ba6bcd01c7848bb6d0023a3c8b3d9551de9b","/.git/HEAD":"23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48","/.git/FETCH_HEAD":"1201908a0a7e81bd92d0e3132a273531af8ec39ce351ded9e8ca9afef15676a9","/.git/description":"82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342","/.git/refs/remotes/origin/main":"c9161984027172f12c435ab133d3b28b17cc5fec647b4d7190a5300204def831","/.git/COMMIT_EDITMSG":"cfcb24e39d07b1894b6017b751f6511f30eeac9b094ebb6b357a3d8a29896409","/.git/refs/heads/main":"c9161984027172f12c435ab133d3b28b17cc5fec647b4d7190a5300204def831","/.git/objects/d9/1e678f5dc53ba8b62e8f8fb689d1b2b395e481":"b7d6ef3c690abc2337647039c9342268535fd6fa8487da8560532d431599519a","/.git/refs/remotes/origin/HEAD":"309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32","/.git/objects/c6/a5191be6276eb7eca7608399b9dd53868dca78":"65fc1f7bed1fa288d98b4bba47594961f08ad9603f8843951eb4fa2ad8994f3c","/.git/objects/4b/825dc642cb6eb9a060e54bf8d69288fbee4904":"1e61e0b2f6c8423512473c5c9567fb9994012422c0bb41de53920328ae24edd2","/.git/config":"32beca0304ade04cb05a8c68b710419227c0ccda8852ab4635a08fc65f59cfbf","/.git/objects/17/8577414cee64698cbb9b8f2b14a79f136f1443":"8015241d4a72b9bb3741dc18e22ef92df95e562d0d4d7a1fe085099e0a05db70","/.git/logs/HEAD":"caab6fb17b090e5d9258fbcbf34f24ab1f72c4743aa32bd876d3207d99adc59e","/.git/logs/refs/remotes/origin/main":"5dff2bdd2ca6e12abe62703f21634d4e86561bfd20e12020fc4f6b62fdd60d3a","/.git/logs/refs/remotes/origin/HEAD":"32a51452329bb91801af3216da2a357dafaa0099dedf30d7accdaa1d5ba61c65","/index.html":"c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd","/.git/info/exclude":"994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d","/.git/hooks/push-to-checkout.sample":"b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b","/.git/hooks/update.sample":"a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee","/.git/hooks/sendemail-validate.sample":"5179ae7bdd72e97e2d9cdbfcec1e72434f42f7f5748665239355f08badcbbee7","/.git/hooks/prepare-commit-msg.sample":"da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc","/.git/hooks/pre-receive.sample":"518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67","/.git/hooks/pre-applypatch.sample":"efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36","/.git/hooks/pre-push.sample":"661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64","/.git/hooks/pre-rebase.sample":"4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e","/.git/hooks/post-update.sample":"4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec","/.git/hooks/pre-merge-commit.sample":"08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c","/.git/hooks/pre-commit.sample":"0dc110f82f15687bb7daae0e09828a248ba74bacc4373b6c5e395fa1140853ef","/.git/hooks/applypatch-msg.sample":"e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3","/.git/logs/refs/heads/main":"fddc2baa28f1e17f80ecf3025f2d92f21acfcc10a35aedac93b755e8346e9abd","/.git/hooks/fsmonitor-watchman.sample":"c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d","/.git/hooks/commit-msg.sample":"00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f"}}
+[debug] [2026-03-19T01:51:07.081Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/e708f9463eeb9bcd:populateFiles 200
+[debug] [2026-03-19T01:51:07.082Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/e708f9463eeb9bcd:populateFiles {"uploadRequiredHashes":["da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc","8015241d4a72b9bb3741dc18e22ef92df95e562d0d4d7a1fe085099e0a05db70","82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342","e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4","fddc2baa28f1e17f80ecf3025f2d92f21acfcc10a35aedac93b755e8346e9abd","0dc110f82f15687bb7daae0e09828a248ba74bacc4373b6c5e395fa1140853ef","b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b","c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d","cfcb24e39d07b1894b6017b751f6511f30eeac9b094ebb6b357a3d8a29896409","4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec","efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36","adf66afb69d89483bfbe34808bb1ba6bcd01c7848bb6d0023a3c8b3d9551de9b","1e6a6949229dc96804c75d47e0f6326cc9d30563105489de7258b41449b67b9e","32a51452329bb91801af3216da2a357dafaa0099dedf30d7accdaa1d5ba61c65","00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f","32beca0304ade04cb05a8c68b710419227c0ccda8852ab4635a08fc65f59cfbf","a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee","661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64","518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67","caab6fb17b090e5d9258fbcbf34f24ab1f72c4743aa32bd876d3207d99adc59e","23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48","08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c","994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d","b7d6ef3c690abc2337647039c9342268535fd6fa8487da8560532d431599519a","65fc1f7bed1fa288d98b4bba47594961f08ad9603f8843951eb4fa2ad8994f3c","4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e","5179ae7bdd72e97e2d9cdbfcec1e72434f42f7f5748665239355f08badcbbee7","4b41b7c58cc089de40ac7916ae1d1e4c676f34d54cf85b9096ae171100eed728","309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32","1e61e0b2f6c8423512473c5c9567fb9994012422c0bb41de53920328ae24edd2","1201908a0a7e81bd92d0e3132a273531af8ec39ce351ded9e8ca9afef15676a9","5dff2bdd2ca6e12abe62703f21634d4e86561bfd20e12020fc4f6b62fdd60d3a","d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838","c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd","c9161984027172f12c435ab133d3b28b17cc5fec647b4d7190a5300204def831","6072a858b665aff695b9888dead27b1918ad9b6ade47bd43a0e446650076cf6d","e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files"}
+[debug] [2026-03-19T01:51:07.083Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.083Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.084Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.085Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.086Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.086Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.087Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.087Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.088Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.088Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.089Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.089Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.089Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.090Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.091Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.091Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.091Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.092Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.092Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.093Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.094Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.094Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.095Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.095Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.096Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.096Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.096Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.097Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.097Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.098Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.098Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.099Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.099Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.100Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.100Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.100Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.101Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.101Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.102Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.102Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.103Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.103Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.104Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.104Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.105Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.106Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.106Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.106Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.107Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.107Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.108Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.108Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.109Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.109Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.110Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.110Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.110Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.110Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.111Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.111Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.112Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.112Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.112Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.112Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.113Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.113Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.113Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.114Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.114Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.114Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.115Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.115Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.115Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.116Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:07.117Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc [none]
+[debug] [2026-03-19T01:51:07.118Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc [stream]
+[debug] [2026-03-19T01:51:07.122Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/8015241d4a72b9bb3741dc18e22ef92df95e562d0d4d7a1fe085099e0a05db70 [none]
+[debug] [2026-03-19T01:51:07.123Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/8015241d4a72b9bb3741dc18e22ef92df95e562d0d4d7a1fe085099e0a05db70 [stream]
+[debug] [2026-03-19T01:51:07.125Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 [none]
+[debug] [2026-03-19T01:51:07.125Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 [stream]
+[debug] [2026-03-19T01:51:07.128Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4 [none]
+[debug] [2026-03-19T01:51:07.128Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4 [stream]
+[debug] [2026-03-19T01:51:07.132Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/fddc2baa28f1e17f80ecf3025f2d92f21acfcc10a35aedac93b755e8346e9abd [none]
+[debug] [2026-03-19T01:51:07.132Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/fddc2baa28f1e17f80ecf3025f2d92f21acfcc10a35aedac93b755e8346e9abd [stream]
+[debug] [2026-03-19T01:51:07.135Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/0dc110f82f15687bb7daae0e09828a248ba74bacc4373b6c5e395fa1140853ef [none]
+[debug] [2026-03-19T01:51:07.135Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/0dc110f82f15687bb7daae0e09828a248ba74bacc4373b6c5e395fa1140853ef [stream]
+[debug] [2026-03-19T01:51:07.139Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b [none]
+[debug] [2026-03-19T01:51:07.139Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b [stream]
+[debug] [2026-03-19T01:51:07.142Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d [none]
+[debug] [2026-03-19T01:51:07.143Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d [stream]
+[debug] [2026-03-19T01:51:07.146Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/cfcb24e39d07b1894b6017b751f6511f30eeac9b094ebb6b357a3d8a29896409 [none]
+[debug] [2026-03-19T01:51:07.147Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/cfcb24e39d07b1894b6017b751f6511f30eeac9b094ebb6b357a3d8a29896409 [stream]
+[debug] [2026-03-19T01:51:07.151Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec [none]
+[debug] [2026-03-19T01:51:07.151Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec [stream]
+[debug] [2026-03-19T01:51:07.157Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 [none]
+[debug] [2026-03-19T01:51:07.158Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 [stream]
+[debug] [2026-03-19T01:51:07.161Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/adf66afb69d89483bfbe34808bb1ba6bcd01c7848bb6d0023a3c8b3d9551de9b [none]
+[debug] [2026-03-19T01:51:07.162Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/adf66afb69d89483bfbe34808bb1ba6bcd01c7848bb6d0023a3c8b3d9551de9b [stream]
+[debug] [2026-03-19T01:51:07.165Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e6a6949229dc96804c75d47e0f6326cc9d30563105489de7258b41449b67b9e [none]
+[debug] [2026-03-19T01:51:07.166Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e6a6949229dc96804c75d47e0f6326cc9d30563105489de7258b41449b67b9e [stream]
+[debug] [2026-03-19T01:51:07.168Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32a51452329bb91801af3216da2a357dafaa0099dedf30d7accdaa1d5ba61c65 [none]
+[debug] [2026-03-19T01:51:07.169Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32a51452329bb91801af3216da2a357dafaa0099dedf30d7accdaa1d5ba61c65 [stream]
+[debug] [2026-03-19T01:51:07.172Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f [none]
+[debug] [2026-03-19T01:51:07.173Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f [stream]
+[debug] [2026-03-19T01:51:07.176Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32beca0304ade04cb05a8c68b710419227c0ccda8852ab4635a08fc65f59cfbf [none]
+[debug] [2026-03-19T01:51:07.177Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32beca0304ade04cb05a8c68b710419227c0ccda8852ab4635a08fc65f59cfbf [stream]
+[debug] [2026-03-19T01:51:07.180Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee [none]
+[debug] [2026-03-19T01:51:07.180Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee [stream]
+[debug] [2026-03-19T01:51:07.184Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 [none]
+[debug] [2026-03-19T01:51:07.185Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 [stream]
+[debug] [2026-03-19T01:51:07.189Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 [none]
+[debug] [2026-03-19T01:51:07.190Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 [stream]
+[debug] [2026-03-19T01:51:07.192Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/caab6fb17b090e5d9258fbcbf34f24ab1f72c4743aa32bd876d3207d99adc59e [none]
+[debug] [2026-03-19T01:51:07.193Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/caab6fb17b090e5d9258fbcbf34f24ab1f72c4743aa32bd876d3207d99adc59e [stream]
+[debug] [2026-03-19T01:51:07.202Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 [none]
+[debug] [2026-03-19T01:51:07.202Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 [stream]
+[debug] [2026-03-19T01:51:07.206Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c [none]
+[debug] [2026-03-19T01:51:07.207Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c [stream]
+[debug] [2026-03-19T01:51:07.210Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d [none]
+[debug] [2026-03-19T01:51:07.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d [stream]
+[debug] [2026-03-19T01:51:07.214Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b7d6ef3c690abc2337647039c9342268535fd6fa8487da8560532d431599519a [none]
+[debug] [2026-03-19T01:51:07.218Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b7d6ef3c690abc2337647039c9342268535fd6fa8487da8560532d431599519a [stream]
+[debug] [2026-03-19T01:51:07.221Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/65fc1f7bed1fa288d98b4bba47594961f08ad9603f8843951eb4fa2ad8994f3c [none]
+[debug] [2026-03-19T01:51:07.221Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/65fc1f7bed1fa288d98b4bba47594961f08ad9603f8843951eb4fa2ad8994f3c [stream]
+[debug] [2026-03-19T01:51:07.225Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e [none]
+[debug] [2026-03-19T01:51:07.226Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e [stream]
+[debug] [2026-03-19T01:51:07.230Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5179ae7bdd72e97e2d9cdbfcec1e72434f42f7f5748665239355f08badcbbee7 [none]
+[debug] [2026-03-19T01:51:07.230Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5179ae7bdd72e97e2d9cdbfcec1e72434f42f7f5748665239355f08badcbbee7 [stream]
+[debug] [2026-03-19T01:51:07.234Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4b41b7c58cc089de40ac7916ae1d1e4c676f34d54cf85b9096ae171100eed728 [none]
+[debug] [2026-03-19T01:51:07.234Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4b41b7c58cc089de40ac7916ae1d1e4c676f34d54cf85b9096ae171100eed728 [stream]
+[debug] [2026-03-19T01:51:07.238Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 [none]
+[debug] [2026-03-19T01:51:07.238Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 [stream]
+[debug] [2026-03-19T01:51:07.241Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e61e0b2f6c8423512473c5c9567fb9994012422c0bb41de53920328ae24edd2 [none]
+[debug] [2026-03-19T01:51:07.242Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e61e0b2f6c8423512473c5c9567fb9994012422c0bb41de53920328ae24edd2 [stream]
+[debug] [2026-03-19T01:51:07.251Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1201908a0a7e81bd92d0e3132a273531af8ec39ce351ded9e8ca9afef15676a9 [none]
+[debug] [2026-03-19T01:51:07.254Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1201908a0a7e81bd92d0e3132a273531af8ec39ce351ded9e8ca9afef15676a9 [stream]
+[debug] [2026-03-19T01:51:07.258Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5dff2bdd2ca6e12abe62703f21634d4e86561bfd20e12020fc4f6b62fdd60d3a [none]
+[debug] [2026-03-19T01:51:07.258Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5dff2bdd2ca6e12abe62703f21634d4e86561bfd20e12020fc4f6b62fdd60d3a [stream]
+[debug] [2026-03-19T01:51:07.262Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838 [none]
+[debug] [2026-03-19T01:51:07.264Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838 [stream]
+[debug] [2026-03-19T01:51:07.267Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd [none]
+[debug] [2026-03-19T01:51:07.268Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd [stream]
+[debug] [2026-03-19T01:51:07.271Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c9161984027172f12c435ab133d3b28b17cc5fec647b4d7190a5300204def831 [none]
+[debug] [2026-03-19T01:51:07.272Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c9161984027172f12c435ab133d3b28b17cc5fec647b4d7190a5300204def831 [stream]
+[debug] [2026-03-19T01:51:07.275Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/6072a858b665aff695b9888dead27b1918ad9b6ade47bd43a0e446650076cf6d [none]
+[debug] [2026-03-19T01:51:07.277Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/6072a858b665aff695b9888dead27b1918ad9b6ade47bd43a0e446650076cf6d [stream]
+[debug] [2026-03-19T01:51:07.279Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 [none]
+[debug] [2026-03-19T01:51:07.279Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 [stream]
+[debug] [2026-03-19T01:51:07.282Z] [hosting][populate queue][FINAL] {"max":1298,"min":1298,"avg":1298,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1464}
+[debug] [2026-03-19T01:51:07.282Z] [hosting] uploads queued: 37
+[info] i  hosting: uploading new files [0/37] (0%) 
+[debug] [2026-03-19T01:51:08.775Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc 200
+[debug] [2026-03-19T01:51:08.775Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/da47e5ee9571edfcb45598d9e1ed424dc30a87011c99c5d205015bbc8cfe16cc [stream]
+[debug] [2026-03-19T01:51:09.201Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c9161984027172f12c435ab133d3b28b17cc5fec647b4d7190a5300204def831 200
+[debug] [2026-03-19T01:51:09.202Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c9161984027172f12c435ab133d3b28b17cc5fec647b4d7190a5300204def831 [stream]
+[debug] [2026-03-19T01:51:09.229Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd 200
+[debug] [2026-03-19T01:51:09.229Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd [stream]
+[debug] [2026-03-19T01:51:09.346Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b7d6ef3c690abc2337647039c9342268535fd6fa8487da8560532d431599519a 200
+[debug] [2026-03-19T01:51:09.347Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b7d6ef3c690abc2337647039c9342268535fd6fa8487da8560532d431599519a [stream]
+[debug] [2026-03-19T01:51:09.350Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4b41b7c58cc089de40ac7916ae1d1e4c676f34d54cf85b9096ae171100eed728 200
+[debug] [2026-03-19T01:51:09.350Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4b41b7c58cc089de40ac7916ae1d1e4c676f34d54cf85b9096ae171100eed728 [stream]
+[debug] [2026-03-19T01:51:09.433Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec 200
+[debug] [2026-03-19T01:51:09.433Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4545774e0eba6264d25197fec3cc1520bfd61d16bf6b417b7b1566460ebc28ec [stream]
+[debug] [2026-03-19T01:51:09.469Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 200
+[debug] [2026-03-19T01:51:09.470Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/23960fa2316fb1cd093c7920df1e9c864ee8c2d784908f7372cd5da920fc3d48 [stream]
+[debug] [2026-03-19T01:51:09.525Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d 200
+[debug] [2026-03-19T01:51:09.526Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/c7efd67fa8de750df765a1cf18a7bdf6c2298ab4a4ab1eed2772a32e4fd9725d [stream]
+[debug] [2026-03-19T01:51:09.532Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f 200
+[debug] [2026-03-19T01:51:09.532Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/00ffdd1510ab6aa72447787ad1516c9bea8345a9cf6ac5345afb1f44aba07f6f [stream]
+[debug] [2026-03-19T01:51:09.536Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c 200
+[debug] [2026-03-19T01:51:09.536Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/08d54483ffa10c472d4b5bf54e637a763a905f6909af1491ad4ca8a19241496c [stream]
+[debug] [2026-03-19T01:51:09.546Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32a51452329bb91801af3216da2a357dafaa0099dedf30d7accdaa1d5ba61c65 200
+[debug] [2026-03-19T01:51:09.546Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32a51452329bb91801af3216da2a357dafaa0099dedf30d7accdaa1d5ba61c65 [stream]
+[debug] [2026-03-19T01:51:09.606Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/0dc110f82f15687bb7daae0e09828a248ba74bacc4373b6c5e395fa1140853ef 200
+[debug] [2026-03-19T01:51:09.607Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/0dc110f82f15687bb7daae0e09828a248ba74bacc4373b6c5e395fa1140853ef [stream]
+[debug] [2026-03-19T01:51:09.648Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5179ae7bdd72e97e2d9cdbfcec1e72434f42f7f5748665239355f08badcbbee7 200
+[debug] [2026-03-19T01:51:09.649Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5179ae7bdd72e97e2d9cdbfcec1e72434f42f7f5748665239355f08badcbbee7 [stream]
+[debug] [2026-03-19T01:51:09.652Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 200
+[debug] [2026-03-19T01:51:09.653Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/efd041617b404639750884bd01917d80c6ec9917e3021e448a1386a237184a36 [stream]
+[debug] [2026-03-19T01:51:09.661Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 200
+[debug] [2026-03-19T01:51:09.661Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/309067256ef321c6851b59e293ca58f7ccae3509e768e9597fd3348d34570b32 [stream]
+[debug] [2026-03-19T01:51:09.699Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 200
+[debug] [2026-03-19T01:51:09.699Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e989aeea500fde675ea8ee009c4cf25aae7abbf4dd02c15b04cb8c85404dbca3 [stream]
+[debug] [2026-03-19T01:51:09.724Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/caab6fb17b090e5d9258fbcbf34f24ab1f72c4743aa32bd876d3207d99adc59e 200
+[debug] [2026-03-19T01:51:09.724Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/caab6fb17b090e5d9258fbcbf34f24ab1f72c4743aa32bd876d3207d99adc59e [stream]
+[debug] [2026-03-19T01:51:09.726Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e6a6949229dc96804c75d47e0f6326cc9d30563105489de7258b41449b67b9e 200
+[debug] [2026-03-19T01:51:09.726Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e6a6949229dc96804c75d47e0f6326cc9d30563105489de7258b41449b67b9e [stream]
+[debug] [2026-03-19T01:51:09.735Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/6072a858b665aff695b9888dead27b1918ad9b6ade47bd43a0e446650076cf6d 200
+[debug] [2026-03-19T01:51:09.735Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/6072a858b665aff695b9888dead27b1918ad9b6ade47bd43a0e446650076cf6d [stream]
+[debug] [2026-03-19T01:51:09.763Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/cfcb24e39d07b1894b6017b751f6511f30eeac9b094ebb6b357a3d8a29896409 200
+[debug] [2026-03-19T01:51:09.763Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/cfcb24e39d07b1894b6017b751f6511f30eeac9b094ebb6b357a3d8a29896409 [stream]
+[info] i  hosting: uploading new files [20/37] (54%) 
+[debug] [2026-03-19T01:51:09.875Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32beca0304ade04cb05a8c68b710419227c0ccda8852ab4635a08fc65f59cfbf 200
+[debug] [2026-03-19T01:51:09.875Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/32beca0304ade04cb05a8c68b710419227c0ccda8852ab4635a08fc65f59cfbf [stream]
+[debug] [2026-03-19T01:51:09.977Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/adf66afb69d89483bfbe34808bb1ba6bcd01c7848bb6d0023a3c8b3d9551de9b 200
+[debug] [2026-03-19T01:51:09.977Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/adf66afb69d89483bfbe34808bb1ba6bcd01c7848bb6d0023a3c8b3d9551de9b [stream]
+[debug] [2026-03-19T01:51:10.082Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e 200
+[debug] [2026-03-19T01:51:10.082Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/4c12afd92c797d205ded918d4da7fff21f264e3347ccfe1f718df372100dea0e [stream]
+[debug] [2026-03-19T01:51:10.131Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1201908a0a7e81bd92d0e3132a273531af8ec39ce351ded9e8ca9afef15676a9 200
+[debug] [2026-03-19T01:51:10.132Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1201908a0a7e81bd92d0e3132a273531af8ec39ce351ded9e8ca9afef15676a9 [stream]
+[debug] [2026-03-19T01:51:10.134Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/65fc1f7bed1fa288d98b4bba47594961f08ad9603f8843951eb4fa2ad8994f3c 200
+[debug] [2026-03-19T01:51:10.134Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/65fc1f7bed1fa288d98b4bba47594961f08ad9603f8843951eb4fa2ad8994f3c [stream]
+[debug] [2026-03-19T01:51:10.177Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d 200
+[debug] [2026-03-19T01:51:10.177Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/994a83b0bd13a31e35114caf18e8b7fcff4253406797d657aa1d9ea64c7b721d [stream]
+[debug] [2026-03-19T01:51:10.186Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee 200
+[debug] [2026-03-19T01:51:10.187Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/a022fa3ca5c3a9dffa3c09dc035866a2c4e6e935a372724aabba8dd6a5639fee [stream]
+[debug] [2026-03-19T01:51:10.201Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 200
+[debug] [2026-03-19T01:51:10.201Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/661c005b1ebf95bb520578d7421bf511e0d91ecac507fc1818ee60c2e3127f64 [stream]
+[debug] [2026-03-19T01:51:10.207Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 200
+[debug] [2026-03-19T01:51:10.207Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/518430951f2c7182a5fc07191f43236719c64a5244e0ac82131ea92dbe4a2f67 [stream]
+[debug] [2026-03-19T01:51:10.218Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b 200
+[debug] [2026-03-19T01:51:10.218Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/b686f0c3faae36d5e3110bd8933f861039094c0a996e5c55c3a776a209ca119b [stream]
+[debug] [2026-03-19T01:51:10.276Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838 200
+[debug] [2026-03-19T01:51:10.276Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838 [stream]
+[debug] [2026-03-19T01:51:10.545Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e61e0b2f6c8423512473c5c9567fb9994012422c0bb41de53920328ae24edd2 200
+[debug] [2026-03-19T01:51:10.545Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/1e61e0b2f6c8423512473c5c9567fb9994012422c0bb41de53920328ae24edd2 [stream]
+[debug] [2026-03-19T01:51:10.632Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/fddc2baa28f1e17f80ecf3025f2d92f21acfcc10a35aedac93b755e8346e9abd 200
+[debug] [2026-03-19T01:51:10.632Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/fddc2baa28f1e17f80ecf3025f2d92f21acfcc10a35aedac93b755e8346e9abd [stream]
+[debug] [2026-03-19T01:51:10.918Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4 200
+[debug] [2026-03-19T01:51:10.919Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4 [stream]
+[debug] [2026-03-19T01:51:11.073Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5dff2bdd2ca6e12abe62703f21634d4e86561bfd20e12020fc4f6b62fdd60d3a 200
+[debug] [2026-03-19T01:51:11.074Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/5dff2bdd2ca6e12abe62703f21634d4e86561bfd20e12020fc4f6b62fdd60d3a [stream]
+[info] i  hosting: uploading new files [35/37] (94%) 
+[debug] [2026-03-19T01:51:11.994Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/8015241d4a72b9bb3741dc18e22ef92df95e562d0d4d7a1fe085099e0a05db70 200
+[debug] [2026-03-19T01:51:11.995Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/8015241d4a72b9bb3741dc18e22ef92df95e562d0d4d7a1fe085099e0a05db70 [stream]
+[debug] [2026-03-19T01:51:12.071Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 200
+[debug] [2026-03-19T01:51:12.072Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/e708f9463eeb9bcd/files/82406efccfbaa0195ef86e8c8aa8fc71d38fb93a6aa0fbd00d90629d3bbe2342 [stream]
+[debug] [2026-03-19T01:51:12.073Z] [hosting][upload queue][FINAL] {"max":4987,"min":1694,"avg":2869.324324324324,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":4991}
+[info] i  hosting: upload complete 
+[info] +  hosting[agendadocente-5828d]: file upload complete 
+[debug] [2026-03-19T01:51:12.075Z] [hosting] deploy completed after 6402ms
+[debug] [2026-03-19T01:51:12.076Z] [
+  {
+    "config": {
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        ".firebaserc",
+        "README.md",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "agendadocente-5828d"
+    },
+    "version": "projects/94681426839/sites/agendadocente-5828d/versions/e708f9463eeb9bcd"
+  }
+]
+[info] i  hosting[agendadocente-5828d]: finalizing version... 
+[debug] [2026-03-19T01:51:12.080Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:12.081Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:12.082Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/e708f9463eeb9bcd updateMask=status%2Cconfig
+[debug] [2026-03-19T01:51:12.083Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/e708f9463eeb9bcd {"status":"FINALIZED","config":{}}
+[debug] [2026-03-19T01:51:12.941Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/e708f9463eeb9bcd 200
+[debug] [2026-03-19T01:51:12.942Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/e708f9463eeb9bcd {"name":"projects/94681426839/sites/agendadocente-5828d/versions/e708f9463eeb9bcd","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-03-19T01:51:05.763937Z","createUser":{"email":"artbenitezdev@gmail.com"},"finalizeTime":"2026-03-19T01:51:14.178761Z","finalizeUser":{"email":"artbenitezdev@gmail.com"}}
+[debug] [2026-03-19T01:51:12.942Z] [hosting] finalized version for agendadocente-5828d:[object Object]
+[info] +  hosting[agendadocente-5828d]: version finalized 
+[info] i  hosting[agendadocente-5828d]: releasing new version... 
+[debug] [2026-03-19T01:51:12.945Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:12.946Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:12.946Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases versionName=projects%2F94681426839%2Fsites%2Fagendadocente-5828d%2Fversions%2Fe708f9463eeb9bcd
+[debug] [2026-03-19T01:51:12.947Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases {}
+[debug] [2026-03-19T01:51:13.629Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases 200
+[debug] [2026-03-19T01:51:41.468Z] ----------------------------------------------------------------------
+[debug] [2026-03-19T01:51:41.472Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\37adr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project agendadocente-5828d
+[debug] [2026-03-19T01:51:41.472Z] CLI Version:   15.8.0
+[debug] [2026-03-19T01:51:41.473Z] Platform:      win32
+[debug] [2026-03-19T01:51:41.473Z] Node Version:  v20.19.6
+[debug] [2026-03-19T01:51:41.473Z] Time:          Wed Mar 18 2026 22:51:41 GMT-0300 (hora estándar de Argentina)
+[debug] [2026-03-19T01:51:41.473Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-19T01:51:44.685Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-19T01:51:44.687Z] > authorizing via signed-in user (artbenitezdev@gmail.com)
+[debug] [2026-03-19T01:51:44.689Z] [iam] checking project agendadocente-5828d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-19T01:51:44.692Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:44.693Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:44.698Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions [none]
+[debug] [2026-03-19T01:51:44.699Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions  x-goog-user-project=agendadocente-5828d
+[debug] [2026-03-19T01:51:44.700Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-19T01:51:46.120Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions 200
+[debug] [2026-03-19T01:51:46.120Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-19T01:51:46.122Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:46.122Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:46.123Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d [none]
+[debug] [2026-03-19T01:51:49.053Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d 200
+[debug] [2026-03-19T01:51:49.054Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d {"projectId":"agendadocente-5828d","projectNumber":"94681426839","displayName":"agendaDocente","name":"projects/agendadocente-5828d","resources":{"hostingSite":"agendadocente-5828d"},"state":"ACTIVE","etag":"1_5560e0fd-3bea-4d0f-8a96-07c855356532"}
+[info] 
+[info] === Deploying to 'agendadocente-5828d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-19T01:51:49.069Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:49.069Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:49.069Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions [none]
+[debug] [2026-03-19T01:51:49.070Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-03-19T01:51:51.143Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions 200
+[debug] [2026-03-19T01:51:51.143Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions {"name":"projects/94681426839/sites/agendadocente-5828d/versions/b1adf9751505bffe","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[agendadocente-5828d]: beginning deploy... 
+[info] i  hosting[agendadocente-5828d]: found 6 files in . 
+[debug] [2026-03-19T01:51:51.179Z] [hosting] uploading with 200 concurrency
+[debug] [2026-03-19T01:51:51.185Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:51.185Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:51.187Z] [hosting] hash cache [] stored for 6 files
+[debug] [2026-03-19T01:51:51.188Z] [hosting][hash queue][FINAL] {"max":1,"min":0,"avg":0,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":5}
+[debug] [2026-03-19T01:51:51.189Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/b1adf9751505bffe:populateFiles [none]
+[debug] [2026-03-19T01:51:51.189Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/b1adf9751505bffe:populateFiles {"files":{"/styles.css":"1e6a6949229dc96804c75d47e0f6326cc9d30563105489de7258b41449b67b9e","/index.html":"c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd","/agenda.html":"4b41b7c58cc089de40ac7916ae1d1e4c676f34d54cf85b9096ae171100eed728","/js/index.js":"e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4","/js/db.js":"d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838","/js/agenda.js":"adf66afb69d89483bfbe34808bb1ba6bcd01c7848bb6d0023a3c8b3d9551de9b"}}
+[debug] [2026-03-19T01:51:52.247Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/b1adf9751505bffe:populateFiles 200
+[debug] [2026-03-19T01:51:52.249Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/b1adf9751505bffe:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/b1adf9751505bffe/files"}
+[debug] [2026-03-19T01:51:52.250Z] [hosting][populate queue][FINAL] {"max":1066,"min":1066,"avg":1066,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1066}
+[debug] [2026-03-19T01:51:52.251Z] [hosting] uploads queued: 0
+[debug] [2026-03-19T01:51:52.252Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1773885112252}
+[info] i  hosting: upload complete 
+[info] +  hosting[agendadocente-5828d]: file upload complete 
+[debug] [2026-03-19T01:51:52.255Z] [hosting] deploy completed after 1102ms
+[debug] [2026-03-19T01:51:52.256Z] [
+  {
+    "config": {
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        ".firebaserc",
+        "README.md",
+        ".git/**",
+        "**/.git/**",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "agendadocente-5828d"
+    },
+    "version": "projects/94681426839/sites/agendadocente-5828d/versions/b1adf9751505bffe"
+  }
+]
+[info] i  hosting[agendadocente-5828d]: finalizing version... 
+[debug] [2026-03-19T01:51:52.260Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:52.260Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:52.262Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/b1adf9751505bffe updateMask=status%2Cconfig
+[debug] [2026-03-19T01:51:52.262Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/b1adf9751505bffe {"status":"FINALIZED","config":{}}
+[debug] [2026-03-19T01:51:53.218Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/b1adf9751505bffe 200
+[debug] [2026-03-19T01:51:53.218Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/b1adf9751505bffe {"name":"projects/94681426839/sites/agendadocente-5828d/versions/b1adf9751505bffe","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-03-19T01:51:52.132828Z","createUser":{"email":"artbenitezdev@gmail.com"},"finalizeTime":"2026-03-19T01:51:54.457345Z","finalizeUser":{"email":"artbenitezdev@gmail.com"}}
+[debug] [2026-03-19T01:51:53.218Z] [hosting] finalized version for agendadocente-5828d:[object Object]
+[info] +  hosting[agendadocente-5828d]: version finalized 
+[info] i  hosting[agendadocente-5828d]: releasing new version... 
+[debug] [2026-03-19T01:51:53.219Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:53.220Z] Checked if tokens are valid: true, expires at: 1773888588958
+[debug] [2026-03-19T01:51:53.220Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases versionName=projects%2F94681426839%2Fsites%2Fagendadocente-5828d%2Fversions%2Fb1adf9751505bffe
+[debug] [2026-03-19T01:51:53.221Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases {}
+[debug] [2026-03-19T01:51:54.083Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases 200
+[debug] [2026-03-19T02:48:24.697Z] ----------------------------------------------------------------------
+[debug] [2026-03-19T02:48:24.718Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\37adr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project agendadocente-5828d
+[debug] [2026-03-19T02:48:24.718Z] CLI Version:   15.8.0
+[debug] [2026-03-19T02:48:24.719Z] Platform:      win32
+[debug] [2026-03-19T02:48:24.719Z] Node Version:  v20.19.6
+[debug] [2026-03-19T02:48:24.720Z] Time:          Wed Mar 18 2026 23:48:24 GMT-0300 (hora estándar de Argentina)
+[debug] [2026-03-19T02:48:24.721Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-19T02:48:33.265Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-19T02:48:33.278Z] > authorizing via signed-in user (artbenitezdev@gmail.com)
+[debug] [2026-03-19T02:48:33.281Z] [iam] checking project agendadocente-5828d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-19T02:48:33.286Z] Checked if tokens are valid: false, expires at: 1773888588958
+[debug] [2026-03-19T02:48:33.290Z] Checked if tokens are valid: false, expires at: 1773888588958
+[debug] [2026-03-19T02:48:33.292Z] > refreshing access token with scopes: []
+[debug] [2026-03-19T02:48:33.300Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-19T02:48:33.301Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-19T02:48:34.559Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-19T02:48:34.560Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-19T02:48:34.589Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions [none]
+[debug] [2026-03-19T02:48:34.591Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions  x-goog-user-project=agendadocente-5828d
+[debug] [2026-03-19T02:48:34.592Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-19T02:48:35.683Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions 200
+[debug] [2026-03-19T02:48:35.683Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/agendadocente-5828d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-19T02:48:35.685Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:35.685Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:35.688Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d [none]
+[debug] [2026-03-19T02:48:36.681Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d 200
+[debug] [2026-03-19T02:48:36.684Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/agendadocente-5828d {"projectId":"agendadocente-5828d","projectNumber":"94681426839","displayName":"agendaDocente","name":"projects/agendadocente-5828d","resources":{"hostingSite":"agendadocente-5828d"},"state":"ACTIVE","etag":"1_5560e0fd-3bea-4d0f-8a96-07c855356532"}
+[info] 
+[info] === Deploying to 'agendadocente-5828d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-19T02:48:36.733Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:36.733Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:36.734Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions [none]
+[debug] [2026-03-19T02:48:36.734Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-03-19T02:48:38.665Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions 200
+[debug] [2026-03-19T02:48:38.665Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions {"name":"projects/94681426839/sites/agendadocente-5828d/versions/db935287aab39e77","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[agendadocente-5828d]: beginning deploy... 
+[info] i  hosting[agendadocente-5828d]: found 6 files in . 
+[debug] [2026-03-19T02:48:38.818Z] [hosting] uploading with 200 concurrency
+[debug] [2026-03-19T02:48:39.059Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.060Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.064Z] [hosting] hash cache [] stored for 6 files
+[debug] [2026-03-19T02:48:39.065Z] [hosting][hash queue][FINAL] {"max":170,"min":12,"avg":54.5,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":176}
+[debug] [2026-03-19T02:48:39.069Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/db935287aab39e77:populateFiles [none]
+[debug] [2026-03-19T02:48:39.078Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/db935287aab39e77:populateFiles {"files":{"/index.html":"c5ac5b5f19970475bc2ddced20720f5e090938322f1aca0dd4bcbf08ee1daefd","/js/index.js":"e3acac5756c342b62e57bcb362a94ede3956f947c0556b64b3539a18bc93f7f4","/js/db.js":"d8ca72fafaee5a78e256de92233a124a336c468677b062b0a117bf9a49aff838","/agenda.html":"32351eafe9b8058b58956fa79f8ec5d721bc47d2a0019e25ebe34214708e6107","/styles.css":"26fc878580db7742e073fc4fcc874db769fa224ed23360987bb94d135024449a","/js/agenda.js":"197df18f2b011321304f863c220ad8926bc15ea1b74276844473a4421daaf1c4"}}
+[debug] [2026-03-19T02:48:39.898Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/db935287aab39e77:populateFiles 200
+[debug] [2026-03-19T02:48:39.898Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/94681426839/sites/agendadocente-5828d/versions/db935287aab39e77:populateFiles {"uploadRequiredHashes":["197df18f2b011321304f863c220ad8926bc15ea1b74276844473a4421daaf1c4","32351eafe9b8058b58956fa79f8ec5d721bc47d2a0019e25ebe34214708e6107","26fc878580db7742e073fc4fcc874db769fa224ed23360987bb94d135024449a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files"}
+[debug] [2026-03-19T02:48:39.900Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.900Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.901Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.902Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.907Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.908Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:39.909Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/197df18f2b011321304f863c220ad8926bc15ea1b74276844473a4421daaf1c4 [none]
+[debug] [2026-03-19T02:48:39.912Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/197df18f2b011321304f863c220ad8926bc15ea1b74276844473a4421daaf1c4 [stream]
+[debug] [2026-03-19T02:48:39.917Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/32351eafe9b8058b58956fa79f8ec5d721bc47d2a0019e25ebe34214708e6107 [none]
+[debug] [2026-03-19T02:48:39.917Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/32351eafe9b8058b58956fa79f8ec5d721bc47d2a0019e25ebe34214708e6107 [stream]
+[debug] [2026-03-19T02:48:39.923Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/26fc878580db7742e073fc4fcc874db769fa224ed23360987bb94d135024449a [none]
+[debug] [2026-03-19T02:48:39.924Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/26fc878580db7742e073fc4fcc874db769fa224ed23360987bb94d135024449a [stream]
+[debug] [2026-03-19T02:48:39.927Z] [hosting][populate queue][FINAL] {"max":850,"min":850,"avg":850,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":868}
+[debug] [2026-03-19T02:48:39.927Z] [hosting] uploads queued: 3
+[info] i  hosting: uploading new files [0/3] (0%) 
+[debug] [2026-03-19T02:48:41.533Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/197df18f2b011321304f863c220ad8926bc15ea1b74276844473a4421daaf1c4 200
+[debug] [2026-03-19T02:48:41.534Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/197df18f2b011321304f863c220ad8926bc15ea1b74276844473a4421daaf1c4 [stream]
+[debug] [2026-03-19T02:48:41.561Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/32351eafe9b8058b58956fa79f8ec5d721bc47d2a0019e25ebe34214708e6107 200
+[debug] [2026-03-19T02:48:41.562Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/32351eafe9b8058b58956fa79f8ec5d721bc47d2a0019e25ebe34214708e6107 [stream]
+[debug] [2026-03-19T02:48:41.982Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/26fc878580db7742e073fc4fcc874db769fa224ed23360987bb94d135024449a 200
+[debug] [2026-03-19T02:48:41.982Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/agendadocente-5828d/versions/db935287aab39e77/files/26fc878580db7742e073fc4fcc874db769fa224ed23360987bb94d135024449a [stream]
+[debug] [2026-03-19T02:48:41.982Z] [hosting][upload queue][FINAL] {"max":2080,"min":1635,"avg":1793.6666666666667,"active":0,"complete":3,"success":3,"errored":0,"retried":0,"total":3,"elapsed":2083}
+[info] i  hosting: upload complete 
+[info] +  hosting[agendadocente-5828d]: file upload complete 
+[debug] [2026-03-19T02:48:41.983Z] [hosting] deploy completed after 3298ms
+[debug] [2026-03-19T02:48:41.984Z] [
+  {
+    "config": {
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        ".firebaserc",
+        "README.md",
+        ".git/**",
+        "**/.git/**",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "agendadocente-5828d"
+    },
+    "version": "projects/94681426839/sites/agendadocente-5828d/versions/db935287aab39e77"
+  }
+]
+[info] i  hosting[agendadocente-5828d]: finalizing version... 
+[debug] [2026-03-19T02:48:41.994Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:41.995Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:41.999Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/db935287aab39e77 updateMask=status%2Cconfig
+[debug] [2026-03-19T02:48:42.000Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/db935287aab39e77 {"status":"FINALIZED","config":{}}
+[debug] [2026-03-19T02:48:42.622Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/db935287aab39e77 200
+[debug] [2026-03-19T02:48:42.622Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/versions/db935287aab39e77 {"name":"projects/94681426839/sites/agendadocente-5828d/versions/db935287aab39e77","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-03-19T02:48:39.114963Z","createUser":{"email":"artbenitezdev@gmail.com"},"finalizeTime":"2026-03-19T02:48:43.468892Z","finalizeUser":{"email":"artbenitezdev@gmail.com"}}
+[debug] [2026-03-19T02:48:42.623Z] [hosting] finalized version for agendadocente-5828d:[object Object]
+[info] +  hosting[agendadocente-5828d]: version finalized 
+[info] i  hosting[agendadocente-5828d]: releasing new version... 
+[debug] [2026-03-19T02:48:42.625Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:42.626Z] Checked if tokens are valid: true, expires at: 1773892113562
+[debug] [2026-03-19T02:48:42.627Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases versionName=projects%2F94681426839%2Fsites%2Fagendadocente-5828d%2Fversions%2Fdb935287aab39e77
+[debug] [2026-03-19T02:48:42.628Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases {}
+[debug] [2026-03-19T02:48:43.343Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/agendadocente-5828d/channels/live/releases 200

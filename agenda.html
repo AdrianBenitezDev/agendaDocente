@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>agendaDocente | Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="agenda-page">
+  <header class="topbar reveal">
+    <div>
+      <p class="eyebrow">Agenda Docente</p>
+      <h1>Mis cursos y pendientes</h1>
+    </div>
+    <button id="logoutBtn" class="secondary">Cerrar sesion</button>
+  </header>
+
+  <main class="layout">
+    <section class="panel reveal">
+      <h2>Agregar curso</h2>
+      <form id="courseForm" class="course-form" autocomplete="off">
+        <input id="escuela" placeholder="Escuela" list="escuelasList" required />
+        <datalist id="escuelasList"></datalist>
+        <input id="curso" placeholder="Curso" required />
+        <input id="materia" placeholder="Materia" required />
+        <button type="submit">Guardar curso</button>
+      </form>
+    </section>
+
+    <section class="courses-section reveal">
+      <h2>Cursos</h2>
+      <div id="coursesContainer" class="courses-grid"></div>
+    </section>
+  </main>
+
+  <template id="courseTemplate">
+    <article class="course-card">
+      <p class="school-banner escuela"></p>
+      <header>
+        <h3 class="course-title"></h3>
+        <div class="card-actions">
+          <button class="icon-btn edit-course" type="button" title="Editar curso" aria-label="Editar curso">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 17.25V21h3.75L17.8 9.94l-3.75-3.75L3 17.25zm17.71-10.04a1.003 1.003 0 0 0 0-1.42l-2.5-2.5a1.003 1.003 0 0 0-1.42 0l-1.96 1.96 3.75 3.75 2.13-1.79z"/>
+            </svg>
+          </button>
+          <button class="icon-btn delete-course" type="button" title="Eliminar curso" aria-label="Eliminar curso">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 7h12l-1 13H7L6 7zm3-3h6l1 2h4v2H4V6h4l1-2z"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <p class="meta materia"></p>
+      <button class="toggle-panel">Mostrar</button>
+
+      <section class="tasks-panel hidden">
+        <ul class="tasks-list"></ul>
+
+        <form class="task-form">
+          <label class="sr-only">Nueva tarea</label>
+          <input class="task-input" placeholder="Nueva tarea" required />
+          <button type="submit">Guardar tarea</button>
+        </form>
+      </section>
+    </article>
+  </template>
+
+  <script type="module" src="js/agenda.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>agendaDocente | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="login-card reveal">
+      <p class="eyebrow">Agenda Docente</p>
+      <h1>Iniciar sesion</h1>
+      <p class="hint">Credenciales de prueba: <strong>admin / 123456</strong></p>
+
+      <form id="loginForm" class="login-form" autocomplete="off">
+        <label for="username">Usuario</label>
+        <input id="username" name="username" required />
+
+        <label for="password">Contrasena</label>
+        <input id="password" name="password" type="password" required />
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <p id="loginMessage" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>

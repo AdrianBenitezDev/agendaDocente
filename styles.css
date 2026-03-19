@@ -1,0 +1,392 @@
+:root {
+  --bg-top: #f4f7f1;
+  --bg-bottom: #d6e8d5;
+  --ink: #1e2a26;
+  --accent: #0f766e;
+  --accent-2: #d97706;
+  --danger: #b42318;
+  --card: rgba(255, 255, 255, 0.88);
+  --line: #d0dfd2;
+  --pending: #9a6700;
+  --progress: #0a66c2;
+  --done: #18794e;
+  --shadow: 0 14px 40px rgba(12, 36, 26, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  color: var(--ink);
+  background: linear-gradient(155deg, var(--bg-top), var(--bg-bottom));
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+body::before {
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(15, 118, 110, 0.25), rgba(15, 118, 110, 0));
+  top: -120px;
+  right: -70px;
+}
+
+body::after {
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.28), rgba(217, 119, 6, 0));
+  bottom: -120px;
+  left: -90px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  margin: 0 0 0.2rem;
+  color: rgba(31, 42, 38, 0.72);
+}
+
+.reveal {
+  animation: rise 420ms ease both;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.04);
+}
+
+button.secondary {
+  background: #f0f5f2;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+input,
+select {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+}
+
+.login-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.login-card {
+  width: min(420px, 100%);
+  background: var(--card);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+}
+
+.login-card h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hint {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: rgba(31, 42, 38, 0.76);
+  font-size: 0.94rem;
+}
+
+.login-form {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.message {
+  margin-top: 0.9rem;
+  min-height: 1.4rem;
+  font-weight: 500;
+}
+
+.message.error {
+  color: var(--danger);
+}
+
+.message.success {
+  color: var(--done);
+}
+
+.topbar {
+  width: min(1120px, 95%);
+  margin: 1.5rem auto 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.layout {
+  width: min(1120px, 95%);
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.panel,
+.courses-section,
+.course-card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.panel,
+.courses-section {
+  padding: 1rem;
+}
+
+.course-form {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.courses-grid {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 0.9rem;
+}
+
+.course-card {
+  padding: 0.9rem;
+  border-top: 6px solid var(--school-color, var(--accent));
+}
+
+.school-banner {
+  margin: -0.9rem -0.9rem 0.75rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 12px 12px 10px 10px;
+  background: var(--school-color, var(--accent));
+  color: #fff;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.course-card header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 8px;
+  background: #f5faf8;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+}
+
+.icon-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.edit-course,
+.edit-task {
+  color: #075985;
+  background: #eef9ff;
+  border-color: #c6e7f7;
+}
+
+.delete-course,
+.delete-task {
+  color: #b42318;
+  background: #fff3f2;
+  border-color: #f2cfcc;
+}
+
+.meta {
+  margin: 0.35rem 0;
+  color: rgba(30, 42, 38, 0.85);
+}
+
+.materia {
+  font-weight: 700;
+}
+
+.toggle-panel {
+  margin-top: 0.45rem;
+  background: var(--accent-2);
+}
+
+.tasks-panel {
+  margin-top: 0.8rem;
+  border-top: 1px dashed var(--line);
+  padding-top: 0.7rem;
+}
+
+.tasks-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.task-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.45rem;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--pending);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.55rem;
+}
+
+.task-item.status-en-proceso {
+  border-left-color: var(--progress);
+}
+
+.task-item.status-finalizada {
+  border-left-color: var(--done);
+}
+
+.task-item .task-text {
+  font-weight: 500;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.32rem;
+}
+
+.task-form {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+}
+
+.empty {
+  margin: 0.3rem 0 0;
+  color: rgba(31, 42, 38, 0.7);
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 920px) {
+  .course-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .course-form {
+    grid-template-columns: 1fr;
+  }
+
+  .task-item {
+    grid-template-columns: 1fr;
+  }
+
+  .task-actions {
+    justify-content: flex-end;
+  }
+
+  .task-form {
+    grid-template-columns: 1fr;
+  }
+}
