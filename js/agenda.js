@@ -9,6 +9,7 @@ import {
   updateCourse,
   updateTask,
 } from './db.js';
+import { computeFallbackSchoolColor, getSchoolColor } from './settings.js';
 
 const courseForm = document.getElementById('courseForm');
 const coursesContainer = document.getElementById('coursesContainer');
@@ -18,16 +19,6 @@ const escuelasList = document.getElementById('escuelasList');
 
 const expandedCourses = new Set();
 const STATUS_OPTIONS = ['pendiente', 'en proceso', 'finalizada'];
-const SCHOOL_COLORS = [
-  '#0f766e',
-  '#1d4ed8',
-  '#b45309',
-  '#be123c',
-  '#7c3aed',
-  '#15803d',
-  '#0e7490',
-  '#a16207',
-];
 const EDIT_ICON_SVG =
   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.8 9.94l-3.75-3.75L3 17.25zm17.71-10.04a1.003 1.003 0 0 0 0-1.42l-2.5-2.5a1.003 1.003 0 0 0-1.42 0l-1.96 1.96 3.75 3.75 2.13-1.79z"/></svg>';
 const DELETE_ICON_SVG =
@@ -38,14 +29,7 @@ function statusClass(status) {
 }
 
 function schoolColor(escuela) {
-  const source = (escuela || '').toLowerCase();
-  let hash = 0;
-
-  for (let i = 0; i < source.length; i += 1) {
-    hash = (hash * 31 + source.charCodeAt(i)) | 0;
-  }
-
-  return SCHOOL_COLORS[Math.abs(hash) % SCHOOL_COLORS.length];
+  return getSchoolColor(escuela) || computeFallbackSchoolColor(escuela);
 }
 
 function updateSchoolSuggestions(courses) {

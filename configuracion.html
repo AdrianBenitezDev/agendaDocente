@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>agendaDocente | Configuracion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="config-page">
+  <header class="topbar reveal">
+    <div>
+      <p class="eyebrow">Agenda Docente</p>
+      <h1>Configuracion de escuelas</h1>
+    </div>
+    <a class="secondary link-btn" href="agenda.html">Volver a agenda</a>
+  </header>
+
+  <main class="config-layout reveal">
+    <section class="panel config-panel">
+      <h2>Color por escuela</h2>
+      <p class="config-note">Defini un color por escuela y se aplicara en todas las cards.</p>
+
+      <form id="schoolColorForm" class="config-form" autocomplete="off">
+        <input id="configEscuela" list="configEscuelasList" placeholder="Escuela" required />
+        <datalist id="configEscuelasList"></datalist>
+        <input id="configColor" type="color" value="#0f766e" required />
+        <button type="submit">Guardar color</button>
+        <button id="removeColorBtn" type="button" class="secondary">Quitar color personalizado</button>
+      </form>
+
+      <p id="configMessage" class="message" aria-live="polite"></p>
+    </section>
+
+    <section class="panel config-panel">
+      <h2>Colores guardados</h2>
+      <ul id="colorList" class="color-list"></ul>
+    </section>
+  </main>
+
+  <div data-shared-footer></div>
+
+  <script type="module" src="js/shared-footer.js"></script>
+  <script type="module" src="js/configuracion.js"></script>
+</body>
+</html>
